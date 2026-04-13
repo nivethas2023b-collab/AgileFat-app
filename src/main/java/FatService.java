@@ -1,4 +1,4 @@
-public class PrescriptionService {
+public class FatService {
 
     public static boolean isValidMedicine(String medicine) {
         if (medicine == null || medicine.trim().isEmpty()) return false;
@@ -20,7 +20,7 @@ public class PrescriptionService {
 
     // 🔥 MAIN METHOD (IMPORTANT)
     public static void main(String[] args) {
-        System.out.println("Prescription App Running...");
+        System.out.println("Agile Fat Lab App Running...");
 
         boolean result = validatePrescription("Paracetamol", 500);
         System.out.println("Validation Result: " + result);

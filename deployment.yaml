@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: prescription-app
+  name: fat-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: prescription
+      app: fat
   template:
     metadata:
       labels:
-        app: prescription
+        app: fat
     spec:
       containers:
       - name: app
-        image: nivetha140805/prescription-app:latest
+        image: nivetha140805/fat-app:latest
         ports:
         - containerPort: 8080

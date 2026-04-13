@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: prescription-service
+  name: fat-service
 spec:
-  type: NodePort   # Exposes app outside cluster
+  type: NodePort  
   selector:
-    app: prescription   # MUST match deployment label
+    app: fat
   ports:
     - protocol: TCP
-      port: 80          # Service port
-      targetPort: 8080  # Container port
-      nodePort: 30007   # External port (browser access)
+      port: 80          
+      targetPort: 8080  
+      nodePort: 30006   
